@@ -8,7 +8,7 @@ cd "$script_path"
 echo "Installing shared libraries, please wait"
 for lib in "${libs[@]}"; do
     # echo "Copying $lib"
-    sudo cp DataStreamSDK_1.12.0/$lib /usr/lib
+    sudo cp -n DataStreamSDK_1.12.0/$lib /usr/lib
     echo -n "."
 done
 
